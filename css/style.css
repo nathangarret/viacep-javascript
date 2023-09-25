@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background-color: #262a2f;
+}
+
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    border-radius: 10px;
+    background-color: steelblue;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.box input[type="text"]{
+    width: 100%;
+    height: auto;
+    border: 2px solid #262a2f;
+    color: #262a2f;
+    outline: 0;
+    padding: 10px;
+    margin: 10 0 20px;
+    border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    color: #262a2f;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow:  0 10px 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+button:hover{
+    background-color: #262a2f;
+    color: #fff;
+}
+
+#resultado{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }25%{
+        transform: translateX(-2.5px);
+    }50%{
+        transform: translateX(0);
+    }75%{
+        transform: translateX(2.5px);
+    }100%{
+        transform: translateX(0);
+    }
+}
+
+#btnVoltar{
+    width: 30%;
+    height: 50px;
+    color: #262a2f;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow:  0 10px 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-weight: 500;
+    padding: 5px 5px 5px 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#btnVoltar:hover{
+    background-color: #262a2f;
+    color: #fff;
+}
+
+span{
+    color: #000;
+    font-weight: 650;
+}

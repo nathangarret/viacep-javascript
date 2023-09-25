@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Consumindo API do VIA CEP</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Informe o seu CEP: </p>
+            <input type="text" id="cep" placeholder="CEP com apenas números" maxlength="9">
+            <button id="btnBuscar">Buscar CEP</button>
+        </div>
+
+        <div id="resultado">
+            <p id="cepText"><span>Cep:</span> </p>
+            <p id="logradouro"><span>Endereço:</span> </p>
+            <p id="localidade"><span>Localidade:</span> </p>
+            <p id="bairro"><span>Bairro:</span> </p>
+            <p id="complemento"><span>Complemento:</span> </p>
+            <p id="uf"><span>Unidade Federal:</span> </p>
+            <button id="btnVoltar">Buscar por outro CEP</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
